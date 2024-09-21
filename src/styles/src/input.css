@@ -149,8 +149,8 @@ body {
      transition: opacity 0.3s;
      font: inherit;
      width: 90%;
-     top: -3%;
      left: 35%;
+     margin-top: 6px;
    }
 
    .tooltip .tooltiptext::after {
@@ -297,4 +297,14 @@ body {
 
 .border-bl-flat {
   border-bottom-left-radius: 0;
+}
+
+@media (min-width: 710px) {
+  .flex-grid {
+    display: flex;
+  }
+}
+
+.col {
+  flex: 1;
 }
