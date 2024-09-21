@@ -57,7 +57,7 @@ const DownloadSelection = () => {
         id="platform"
         value={selectedPlatform}
         onChange={(e) => setSelectedPlatform(e.target.value)}
-        className="block w-full mt-2 p-2 bg-site-300 w-full p-2 text-off-white text-2xl font-light rounded-[0.5em] mt-4 appearance-none"
+        className="block p-2 bg-site-300 w-full text-off-white text-2xl font-light rounded-[0.5em] mt-4 appearance-none"
       >
         <option value="generic">Generic (x86_64/ARM64)</option>
         <option value="pine">Pine64 (ARM64)</option>

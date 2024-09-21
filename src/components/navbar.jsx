@@ -35,7 +35,7 @@ const baritems = [
     },
     {
         link: "https://discord.com/invite/reSvc8Ztk3",
-        goto: "Community"
+        goto: "Discord"
     }
 ]
 
