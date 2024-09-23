@@ -15,7 +15,7 @@ function Ecosystem() {
       {activeSection === 'main' && (
         <div className="md:w-[85%] m-auto lg:grid lg:grid-cols-1 lg:gap-8 extended h-auto lg:w-[85%] py-8 rounded-[0.65em] m-auto animate-slide-in">
           <div className="text-off-white m-auto text-left pt-4 pb-4 px-2">
-            <h1 className="text-2xl font-bold text-rhino-purple md:text-center">Your experience matters</h1>
+            <h1 className="text-3xl font-bold text-rhino-purple md:text-center">Your experience matters</h1>
             <p className="text-xl py-4">
               Rhino Linux is dedicated to providing the best desktop experience possible. We have carefully created a set of graphical applications and command-line utilities to cater to your everyday needs.
             </p>

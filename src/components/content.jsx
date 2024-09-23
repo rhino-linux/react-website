@@ -1,5 +1,6 @@
 import React from "react";
 import Image from 'next/image';
+import Link from 'next/link';
 
 // Array holding the data for each section
 const contentData = [
@@ -30,14 +31,14 @@ function Content() {
           className="md:w-[85%] m-auto lg:grid sm:py-8 lg:grid-cols-2 lg:gap-8"
         >
           <div>
-            <h1 className="text-2xl font-bold py-2 text-rhino-purple">
+            <h1 className="text-3xl font-bold py-2 text-rhino-purple">
               {item.title}
             </h1>
             <p className="text-white text-xl py-2">{item.description}</p>
 
             {/* Only display the button for the first two items */}
             {item.buttonText && item.buttonLink && index < 2 && (
-              <a
+              <Link
                 href={item.buttonLink}
                 className="inline-flex justify-center items-center py-2 px-4 mt-2 text-base text-center rounded-[0.65em] bg-rhino-purple hover:scale-105 text-white transition-all text-xl"
               >
@@ -54,7 +55,7 @@ function Content() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </a>
+              </Link>
             )}
           </div>
           <div className="py-8 lg:py-0">
