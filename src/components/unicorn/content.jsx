@@ -66,7 +66,7 @@ function Content() {
               </Link>
             )}
           </div>
-          <div className="py-8 lg:py-0">
+          <div className="py-8 lg:py-4">
             <Image
               src={item.imgSrc}
               className="w-full rounded-lg"
