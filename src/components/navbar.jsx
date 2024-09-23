@@ -51,7 +51,7 @@ function NavBar() {
                 </div>
                 <div className="p-2 px-4 text-center m-4 rounded-lg md:flex lg:gap-8 md:gap-4 hidden md:block">
                         {baritems.map((item) => (
-                            <p><Link href={item.link} key={item.link} className="text-xl text-white hover:text-rhino-purple transition-all">{item.goto}</Link></p>
+                            <p key={item.link}><Link href={item.link} className="text-xl text-white hover:text-rhino-purple transition-all">{item.goto}</Link></p>
                         ))}
                 </div>
                 <div
