@@ -13,7 +13,7 @@ function Ecosystem() {
   return (
     <div className="w-full px-8 md:px-16 lg:px-24">
       {activeSection === 'main' && (
-        <div className="md:w-[85%] m-auto lg:grid lg:grid-cols-1 lg:gap-8 extended h-auto lg:w-[85%] py-8 rounded-[0.65em] m-auto animate-slide-in">
+        <div className="md:w-[85%] m-auto lg:grid lg:grid-cols-1 lg:gap-8 extended h-auto lg:w-[85%] py-8 rounded-[0.65em] m-auto md:animate-slide-in">
           <div className="text-off-white m-auto text-left pt-4 pb-4 px-2">
             <h1 className="text-3xl font-bold text-rhino-purple md:text-center">Your experience matters</h1>
             <p className="text-xl py-4">
