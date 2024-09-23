@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 // Array holding the data for each section
 const contentData = [
@@ -34,7 +35,7 @@ function Content() {
       {contentData.map((item, index) => (
         <div
           key={index}
-          className="md:w-[85%] m-auto lg:grid py-12 lg:grid-cols-2 lg:gap-8"
+          className="md:w-[85%] m-auto lg:grid py-8 lg:grid-cols-2 lg:gap-8"
         >
           <div>
             <h1 className="text-5xl unicorn font-bold py-4 text-rhino-purple">
@@ -65,9 +66,11 @@ function Content() {
             )}
           </div>
           <div className="py-8 lg:py-0">
-            <img
+            <Image
               src={item.imgSrc}
               className="w-full rounded-lg"
+              width="200"
+              height="200"
               alt={item.title}
             />
           </div>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Banner from './banner';
+import Image from 'next/image';
 
 function Ecosystem() {
   const [activeSection, setActiveSection] = useState('main');
@@ -12,24 +13,24 @@ function Ecosystem() {
   return (
     <div className="w-full px-8 md:px-16 lg:px-24">
       {activeSection === 'main' && (
-        <div className="extended h-auto lg:w-[85%] py-12 rounded-[0.65em] m-auto animate-slide-in">
+        <div className="md:w-[85%] m-auto lg:grid lg:grid-cols-1 lg:gap-8 extended h-auto lg:w-[85%] py-8 rounded-[0.65em] m-auto animate-slide-in">
           <div className="text-off-white m-auto text-left pt-4 pb-4 px-2">
-            <h1 className="text-6xl font-bold text-rhino-purple md:text-center">Your experience matters.</h1>
-            <p className="text-2xl py-4">
+            <h1 className="text-2xl font-bold text-rhino-purple md:text-center">Your experience matters</h1>
+            <p className="text-xl py-4">
               Rhino Linux is dedicated to providing the best desktop experience possible. We have carefully created a set of graphical applications and command-line utilities to cater to your everyday needs.
             </p>
             <div className="grid grid-cols-3 gap-8 text-center mt-4">
               <div>
-                <img src="/img/ecosystem/icons/setup-wizard.webp" alt="Setup Wizard" className="md:w-[25%] w-full mx-auto" />
-                <a onClick={wizardshow} className="hover:cursor-pointer hover:text-rhino-purple transition-all text-2xl">Setup Wizard →</a>
+                <Image src="/img/ecosystem/icons/setup-wizard.webp" alt="Setup Wizard" width="200" height="200" className="w-[12vw] md:w-[7vw] mx-auto" />
+                <a onClick={wizardshow} className="hover:cursor-pointer hover:text-rhino-purple transition-all text-xl">Setup Wizard →</a>
               </div>
               <div>
-                <img src="/img/ecosystem/icons/your-os.webp" alt="Your System" className="md:w-[25%] w-full mx-auto" />
-                <a onClick={systemshow} className="hover:cursor-pointer hover:text-rhino-purple transition-all text-2xl">Your System →</a>
+                <Image src="/img/ecosystem/icons/your-os.webp" alt="Your System" width="200" height="200" className="w-[12vw] md:w-[7vw] mx-auto" />
+                <a onClick={systemshow} className="hover:cursor-pointer hover:text-rhino-purple transition-all text-xl">Your System →</a>
               </div>
               <div>
-                <img src="/img/ecosystem/icons/rpk-logo.webp" alt="rhino-pkg" className="md:w-[25%] w-full mx-auto" />
-                <a onClick={rpkshow} className="hover:cursor-pointer hover:text-rhino-purple transition-all text-2xl">rhino-pkg →</a>
+                <Image src="/img/ecosystem/icons/rpk-logo.webp" alt="rhino-pkg" width="200" height="200" className="w-[12vw] md:w-[7vw] mx-auto" />
+                <a onClick={rpkshow} className="hover:cursor-pointer hover:text-rhino-purple transition-all text-xl">rhino-pkg →</a>
               </div>
             </div>
           </div>
