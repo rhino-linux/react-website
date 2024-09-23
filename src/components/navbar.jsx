@@ -45,13 +45,13 @@ function NavBar() {
         <div>
             <nav className="w-full m-auto flex items-center justify-between">
                 <div className="p-4">
-                    <a href="/">
+                    <Link href="/">
                         <Image src="/img/logo.png" alt="" width="200" height="200" className="w-[5vw]" />
-                    </a>
+                    </Link>
                 </div>
                 <div className="p-2 px-4 text-center m-4 rounded-lg md:flex lg:gap-8 md:gap-4 hidden md:block">
                         {baritems.map((item) => (
-                            <p><a href={item.link} key={item.link} className="text-xl text-white hover:text-rhino-purple transition-all">{item.goto}</a></p>
+                            <p><Link href={item.link} key={item.link} className="text-xl text-white hover:text-rhino-purple transition-all">{item.goto}</Link></p>
                         ))}
                 </div>
                 <div
