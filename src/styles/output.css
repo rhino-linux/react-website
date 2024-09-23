@@ -562,18 +562,6 @@ video {
   margin: auto;
 }
 
-.m-6 {
-  margin: 1.5rem;
-}
-
-.m-2 {
-  margin: 0.5rem;
-}
-
-.m-3 {
-  margin: 0.75rem;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -597,6 +585,11 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .-mr-1 {
@@ -692,6 +685,26 @@ video {
 }
 
 .w-full {
+  width: 100%;
+}
+
+.w-\[99\%\] {
+  width: 99%;
+}
+
+.w-\[99vw\] {
+  width: 99vw;
+}
+
+.w-\[98\%\] {
+  width: 98%;
+}
+
+.w-\[100\&\] {
+  width: 100&;
+}
+
+.w-\[100\%\] {
   width: 100%;
 }
 
@@ -817,35 +830,6 @@ video {
   background-color: rgb(35 30 55 / var(--tw-bg-opacity));
 }
 
-.bg-site-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(25 20 45 / var(--tw-bg-opacity));
-}
-
-.bg-opacity-0 {
-  --tw-bg-opacity: 0;
-}
-
-.bg-opacity-5 {
-  --tw-bg-opacity: 0.05;
-}
-
-.bg-opacity-10 {
-  --tw-bg-opacity: 0.1;
-}
-
-.bg-opacity-30 {
-  --tw-bg-opacity: 0.3;
-}
-
-.bg-opacity-40 {
-  --tw-bg-opacity: 0.4;
-}
-
-.bg-opacity-45 {
-  --tw-bg-opacity: 0.45;
-}
-
 .bg-opacity-35 {
   --tw-bg-opacity: 0.35;
 }
@@ -944,10 +928,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .text-2xl {

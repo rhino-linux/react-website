@@ -53,16 +53,18 @@ const DownloadSelection = () => {
       <h2 className="text-off-white text-center text-2xl font-light mt-2 drop-shadow-header-drop">
         Version <b><b>2024.2</b></b>
       </h2>
-      <select
-        id="platform"
-        value={selectedPlatform}
-        onChange={(e) => setSelectedPlatform(e.target.value)}
-        className="block p-2 bg-site-300 w-full text-off-white text-2xl font-light rounded-[0.5em] mt-4 appearance-none"
-      >
-        <option value="generic">Generic (x86_64/ARM64)</option>
-        <option value="pine">Pine64 (ARM64)</option>
-        <option value="rpi">Raspberry Pi (ARM64)</option>
-      </select>
+      <div className="mx-2">
+        <select
+          id="platform"
+          value={selectedPlatform}
+          onChange={(e) => setSelectedPlatform(e.target.value)}
+          className="p-2 px-4 bg-site-300 w-[100%] text-off-white text-2xl font-light rounded-[0.5em] mt-4 appearance-none"
+        >
+          <option value="generic">Generic (x86_64/ARM64)</option>
+          <option value="pine">Pine64 (ARM64)</option>
+          <option value="rpi">Raspberry Pi (ARM64)</option>
+        </select>
+      </div>
 
       <div className="content-display mt-6 flex-grid">
         {renderContent()}
