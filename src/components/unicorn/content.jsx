@@ -23,7 +23,7 @@ const contentData = [
   {
     title: "Modern desktop management",
     description:
-      "You can switch between virtual desktops with ease. We have loaded in Xfdashboard, with many minor tweaks and improvements. Xfdashboard brings a gnome-shell like virtual desktop and èxpose built right into XFCE. ",
+      "You can switch between virtual desktops with ease. We have loaded in Xfdashboard, with many minor tweaks and improvements. Xfdashboard brings a gnome-shell like virtual desktop and exposé built right into XFCE.",
     imgSrc: "/img/unicorn/xfdashboard.webp",
     buttonText: null,
     buttonLink: null,
