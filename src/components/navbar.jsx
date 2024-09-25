@@ -49,7 +49,7 @@ function NavBar() {
         <div>
             <nav className="w-full m-auto flex items-center md:justify-center justify-between">
                 <Link href="/" className="md:hidden p-4 hover:brightness-50 hover:opacity-80 transition-all">
-                    <Image src="/img/logo.png" alt="" width="200" height="200" className="m-2 mt-4 w-[10vw]" />
+                    <Image src="/img/logo.png" alt="" width="60" height="60" className="m-2 mt-4" />
                 </Link>
                 <div className="p-2 px-4 text-center m-4 bg-site-300/30 backdrop-blur shadow-black/40 shadow-lg text-xl bg-opacity-35 rounded-[0.65em] md:flex lg:gap-8 md:gap-8 hidden md:block">
                     <Link href="/" className="hover:scale-110 my-auto hover:brightness-50 hover:opacity-80 transition-all">
@@ -60,10 +60,10 @@ function NavBar() {
                     ))}
                 </div>
                 <div
-                    className="p-2 px-4 cursor-pointer md:hidden"
+                    className="p-2 px-4 text-burger cursor-pointer md:hidden"
                     onClick={() => toggleMegaMenu('mega-menu')}
                 >
-                    <h1 className="text-[10vw] hover:text-rhino-purple transition-all text-white">☰</h1>
+                    <h1 className="hover:text-rhino-purple transition-all text-white">☰</h1>
                 </div>
             </nav>
             <div className="hidden transition-all w-full p-2" id="mega-menu">
