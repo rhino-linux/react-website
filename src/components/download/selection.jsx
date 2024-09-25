@@ -47,7 +47,7 @@ const DownloadSelection = () => {
 
   return (
     <div className="md:w-[85%] w-full mx-auto md:p-0 p-4">
-      <h1 className="text-off-white text-center pt-2 text-3xl drop-shadow-header-drop">
+      <h1 className="text-off-white text-center pt-8 text-3xl drop-shadow-header-drop">
         Download Rhino Linux
       </h1>
       <h2 className="text-off-white text-center text-2xl font-light mt-2 drop-shadow-header-drop">

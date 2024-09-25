@@ -812,6 +812,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-\[0\.6em\] {
+  border-radius: 0.6em;
+}
+
 .border-0 {
   border-width: 0px;
 }
@@ -936,6 +940,10 @@ video {
   padding-top: 2rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1051,6 +1059,26 @@ video {
 
 .shadow-black\/40 {
   --tw-shadow-color: rgb(0 0 0 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-black {
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-black\/50 {
+  --tw-shadow-color: rgb(0 0 0 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-black\/20 {
+  --tw-shadow-color: rgb(0 0 0 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-black\/30 {
+  --tw-shadow-color: rgb(0 0 0 / 0.3);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
