@@ -1,10 +1,11 @@
 import React from "react";
+import Link from "next/link";
 
 const footerItems = [
     { name: 'Mission Statement', href: '/statement/' },
     { name: 'Code of Conduct', href: '/code/'},
     { name: 'Branding', href: 'https://wiki.rhinolinux.org/dev/brand' },
-    { name: 'Unicorn', href: 'https://wiki.rhinolinux.org/user/unicorn' }
+    { name: 'Unicorn', href: '/unicorn/' }
 ];
 
 const organisationalItems = [
@@ -20,9 +21,9 @@ function Footer() {
             <p className="mb-2 text-center text-off-white text-lg">
                 {footerItems.map((item, index) => (
                 <span key={index}>
-                    <a href={item.href} className="text-rhino-purple">
+                    <Link href={item.href} className="text-rhino-purple">
                         {item.name}
-                    </a>
+                    </Link>
                     {index < footerItems.length - 1 && ' | '}
                 </span>
                 ))}
@@ -30,9 +31,9 @@ function Footer() {
             <p className="text-center text-off-white text-lg">
                 {organisationalItems.map((item, index) => (
                     <span key={index}>
-                        <a href={item.href} className="text-rhino-purple">
+                        <Link href={item.href} className="text-rhino-purple">
                             {item.name}
-                        </a>
+                        </Link>
                         {index < organisationalItems.length - 1 && ' | '}
                     </span>
                 ))}
