@@ -39,6 +39,10 @@ const baritems = [
         goto: "Wiki"
     },
     {
+        link: "https://pacstall.dev/packages",
+        goto: "Packages"
+    },
+    {
         link: "https://discord.com/invite/reSvc8Ztk3",
         goto: "Discord"
     }

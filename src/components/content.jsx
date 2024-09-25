@@ -5,7 +5,7 @@ import Link from 'next/link';
 // Array holding the data for each section
 const contentData = [
   {
-    title: "Unicorn built-in",
+    title: "Discover Unicorn",
     description:
       "Rhino Linux comes preinstalled with its own in-house desktop experience, Unicorn, a custom-built XFCE desktop combining the best of traditional and modern takes on the desktop. Unicorn is fast and elegant, perfectly adapted for your needs.",
     imgSrc: "/img/home/image.png",
@@ -15,7 +15,7 @@ const contentData = [
   {
     title: "Perfect for developers",
     description:
-      "Developers will fall in love with our vast software repositories which are always up-to-date. User-repositories such as Pacstall can help provide development libraries that are critical for your project. With codium preinstalled on your system you can begin doing what you do best, instantly. ",
+      "Developers will fall in love with our vast software repositories which are always up-to-date. User repositories such as Pacstall can help provide development libraries that are critical for your project. With Codium preinstalled on your system you can begin doing what you do best, instantly. ",
     imgSrc: "/img/home/developers.webp",
     buttonText: "Read our wiki",
     buttonLink: "https://wiki.rhinolinux.org",

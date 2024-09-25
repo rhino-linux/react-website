@@ -7,12 +7,12 @@ function Banner({ title, imageSrc, description, onBackClick }) {
       <h1 className="text-2xl font-bold text-rhino-purple">{title}</h1>
       <div className="md:grid md:grid-cols-2 text-center md:p-8 ecosystem-text">
         <div>
-          <Image src={imageSrc} alt={title} width="200" height="200" className="w-[90%] md:w-[60%] m-auto my-8 md:my-0" />
+          <Image src={imageSrc} alt={title} width="200" height="200" className="w-[90%] md:w-[80%] m-auto my-8 md:my-0" />
         </div>
         <div>
           <p className="text-left text-lg text-white">{description}</p>
           {onBackClick && (
-            <p className="underline text-xl mt-4 hover:cursor-pointer text-left" onClick={onBackClick}>
+            <p className="text-xl mt-4 hover:cursor-pointer hover:text-rhino-purple transition-all text-left" onClick={onBackClick}>
               ⟵ Go back
             </p>
           )}

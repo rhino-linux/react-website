@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../components/hero";
+import Description from "../components/description";
 import Content from "../components/content";
 import Ecosystem from "../components/ecosystem";
 import Quote from "../components/quote";
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <Description />
       <Ecosystem />
       <Content />
       <Quote />
