@@ -70,6 +70,40 @@ body {
     animation: slide-in 0.5s ease-in-out;
 }
 
+.ecosystem-text-up {
+    animation: slide-up 0.5s ease-in-out;
+}
+
+.ecosystem-text-down {
+    animation: slide-down 0.5s ease-in-out;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+    translation: transform;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+    translation: transform;
+  }
+}
+
+@keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+      translation: transform;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+      translation: transform;
+    }
+  }
+
 @keyframes slide-in {
   from {
     opacity: 0;
