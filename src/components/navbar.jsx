@@ -63,7 +63,7 @@ function NavBar() {
             </nav>
             <div className="hidden transition-all w-full p-2" id="mega-menu">
                 <div className="w-full m-auto">
-                    <div className="md:hidden text-xl bg-site-300 bg-opacity-35 rounded-[0.65em] p-2 m-4">
+                    <div className="md:hidden bg-site-300/30 backdrop-blur shadow-black/40 shadow-lg text-xl bg-opacity-35 rounded-[0.65em] p-2 m-4">
                         {baritems.map((item) => (
                             <li className="list-none p-4" key={item.link}>
                                 <Link href={item.link}>

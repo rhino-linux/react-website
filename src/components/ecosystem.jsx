@@ -19,7 +19,7 @@ function Ecosystem() {
             <p className="text-xl py-4">
               Rhino Linux is dedicated to providing the best desktop experience possible. We have carefully created a set of graphical applications and command-line utilities to cater to your everyday needs.
             </p>
-            <div className="grid grid-cols-3 gap-8 text-center mt-4">
+            <div className="grid grid-cols-3 gap-8 text-center mt-4 ecosystem-text">
               <div>
                 <Image src="/img/ecosystem/icons/setup-wizard.webp" alt="Setup Wizard" width="200" height="200" className="w-[12vw] md:w-[7vw] mx-auto" />
                 <a onClick={wizardshow} className="hover:cursor-pointer hover:text-rhino-purple transition-all text-xl">Setup Wizard →</a>

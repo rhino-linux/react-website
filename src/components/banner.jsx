@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Banner({ title, imageSrc, description, onBackClick }) {
   return (
-    <div className="md:w-[85%] py-12 text-off-white m-auto text-center animate-slide-in">
+    <div className="md:w-[85%] py-12 text-off-white m-auto text-center a-ecosystem-text">
       <h1 className="text-2xl font-bold text-rhino-purple">{title}</h1>
       <div className="md:grid md:grid-cols-2 m-auto text-center md:p-8">
         <div>
