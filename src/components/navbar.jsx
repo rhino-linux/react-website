@@ -60,7 +60,7 @@ function NavBar() {
                     ))}
                 </div>
                 <div
-                    className="p-1 mx-6 pb-2 px-2 mt-1 text-burger cursor-pointer md:hidden bg-site-300/30 backdrop-blur shadow-black/40 shadow-lg rounded-[0.65em]"
+                    className="p-4 mb-1 mr-1 text-burger cursor-pointer md:hidden"
                     onClick={() => toggleMegaMenu('mega-menu')}
                 >
                     <h1 className="hover:text-rhino-purple transition-all text-white">☰</h1>
