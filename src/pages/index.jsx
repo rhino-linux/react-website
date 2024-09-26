@@ -6,14 +6,17 @@ import Ecosystem from "../components/ecosystem";
 import Quote from "../components/quote";
 import Footer from "../components/footer";
 import Link from "next/link";
-export const metadata = {
-  title: 'Rhino Linux',
-  description: 'Ubuntu Based, Rolling Release',
-}
+import Head from "next/head";
 
 export default function Home() {
   return (
     <main>
+      <Head>
+        <title>"Rhino Linux"</title>
+        <meta name="description" content="Ubuntu Based, Rolling Release" />
+        <meta name="og:title" content="Rhino Linux" />
+        <meta name="og:description" content="Ubuntu Based, Rolling Release" />
+      </Head>
       <Hero />
       <div className="bg-site-400 text-center text-md mt-8">
         <div className="p-2 bg-site-300 items-center text-indigo-100 leading-none rounded-full flex inline-flex mx-4" role="alert">
