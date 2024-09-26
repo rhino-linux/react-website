@@ -14,8 +14,10 @@ export default function Home() {
       <Head>
         <title>Rhino Linux</title>
         <meta name="description" content="Ubuntu Based, Rolling Release" />
-        <meta name="og:title" content="Rhino Linux" />
+        <meta name="og:site_name" content="Rhino Linux" />
+        <meta name="og:title" content="Homepage" />
         <meta name="og:description" content="Ubuntu Based, Rolling Release" />
+        <meta name="darkreader-lock" />
       </Head>
       <Hero />
       <div className="bg-site-400 text-center text-md mt-8">

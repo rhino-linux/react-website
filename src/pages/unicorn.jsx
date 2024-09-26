@@ -10,8 +10,10 @@ export default function Home() {
       <Head>
         <title>Unicorn Desktop | Rhino Linux</title>
         <meta name="description" content="Ubuntu Based, Rolling Release" />
-        <meta name="og:title" content="Rhino Linux" />
+        <meta name="og:site_name" content="Rhino Linux" />
+        <meta name="og:title" content="Unicorn Desktop" />
         <meta name="og:description" content="Ubuntu Based, Rolling Release" />
+        <meta name="darkreader-lock" />
       </Head>
       <Hero />
       <Content />
