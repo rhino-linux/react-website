@@ -35,7 +35,7 @@ function Footer() {
                 <p className="my-2 text-left text-off-white/80 text-lg">
                     {footerItemsA.map((item, index) => (
                     <span key={index}>
-                        <Link href={item.href} className="inline-flex hover:text-rhino-purple transition-all mx-4">
+                        <Link href={item.href} className="inline-flex hover:text-rhino-purple transition-all mx-4 my-1">
                             {item.name}
                         </Link>
                     </span>
@@ -44,7 +44,7 @@ function Footer() {
                 <p className="my-2 text-right text-off-white/80 text-lg">
                     {footerItemsB.map((item, index) => (
                     <span key={index}>
-                        <Link href={item.href} className="inline-flex hover:text-rhino-purple transition-all mx-4">
+                        <Link href={item.href} className="inline-flex hover:text-rhino-purple transition-all mx-4 my-1">
                             {item.name}
                         </Link>
                     </span>
