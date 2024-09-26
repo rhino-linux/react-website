@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <title>"Unicorn Desktop | Rhino Linux"</title>
+        <title>Unicorn Desktop | Rhino Linux</title>
         <meta name="description" content="Ubuntu Based, Rolling Release" />
         <meta name="og:title" content="Rhino Linux" />
         <meta name="og:description" content="Ubuntu Based, Rolling Release" />
