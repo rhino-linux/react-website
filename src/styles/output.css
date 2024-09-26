@@ -615,6 +615,11 @@ video {
   margin-right: auto;
 }
 
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -635,19 +640,9 @@ video {
   margin-bottom: auto;
 }
 
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .-mr-1 {
@@ -692,6 +687,18 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
 }
 
 .block {
@@ -756,6 +763,10 @@ video {
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
 }
 
 .cursor-pointer {
@@ -842,6 +853,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .border-0 {
   border-width: 0px;
 }
@@ -872,6 +887,11 @@ video {
 
 .bg-site-300\/30 {
   background-color: rgb(35 30 55 / 0.3);
+}
+
+.bg-site-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 20 45 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-35 {
@@ -966,8 +986,8 @@ video {
   padding-top: 2rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .text-left {
@@ -1022,6 +1042,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1036,6 +1061,14 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .italic {
@@ -1067,6 +1100,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-indigo-100 {
+  --tw-text-opacity: 1;
+  color: rgb(224 231 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1530,11 +1568,6 @@ select {
     margin-bottom: 0px;
   }
 
-  .md\:mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
   .md\:block {
     display: block;
   }
@@ -1591,11 +1624,6 @@ select {
   .md\:text-center {
     text-align: center;
   }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -1650,6 +1678,11 @@ select {
   .lg\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .lg\:text-xl {
