@@ -2,7 +2,7 @@ import React from "react";
 
 function Description() {
   return (
-    <div className="w-full px-8 pt-8 mt-4 md:px-16 lg:px-24" id="learn">
+    <div className="w-full px-8 pt-4 mt-4 md:px-16 lg:px-24" id="learn">
         <h1 className="md:text-center text-3xl font-bold pb-4 px-2 text-rhino-purple">
           Why Rhino Linux?
         </h1>
