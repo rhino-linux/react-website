@@ -9,6 +9,7 @@ export default function SiteData({ title, description }) {
       <meta name="og:title" content={title} />
       <meta name="og:description" content={description || "Ubuntu Based, Rolling Release"} />
       <meta name="darkreader-lock" />
+      <meta name="theme-color" content="#8d7be4">
     </Head>
   );
 }
