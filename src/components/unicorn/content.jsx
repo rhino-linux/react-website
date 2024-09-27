@@ -5,7 +5,7 @@ import Link from 'next/link';
 // Array holding the data for each section
 const contentData = [
   {
-    title: "Adaptive, to any workflow.",
+    title: "Adaptive, to any workflow",
     description:
       " Whether you prefer the traditional floating windows, or are a fanatic of tiling window managers, Unicorn is perfect for you. With optional auto-tiling you can easily toggle between floating and tiling at the press of a button.",
     imgSrc: "/img/unicorn/tiling.webp",
