@@ -7,7 +7,7 @@ function Banner({ title, imageSrc, description, onBackClick }) {
       <h1 className="text-2xl font-bold text-rhino-purple">{title}</h1>
       <div className="md:grid md:grid-cols-2 text-center md:p-8 ecosystem-text">
         <div>
-          <Image src={imageSrc} alt={title} width="200" height="200" className="w-[90%] md:w-[80%] m-auto my-8 md:my-0" />
+          <Image src={imageSrc} alt={title} width="900" height="900" unoptimized quality={100} className="w-[90%] md:w-[80%] m-auto my-8 md:my-0" />
         </div>
         <div>
           <p className="text-left text-lg text-white">{description}</p>

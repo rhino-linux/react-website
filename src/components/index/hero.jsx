@@ -11,7 +11,7 @@ function Hero() {
                 <p className="mb-8 text-2xl font-normal sm:px-16 xl:px-48 text-white">Rhino Linux is an Ubuntu-based, rolling release distribution, with Pacstall & XFCE at its core.
                 </p>
                 <div className="mb-8 space-y-4 flex-row justify-center space-x-4">
-                    <a href="download" className="inline-flex justify-center items-center py-2 px-4 text-center shadow-lg shadow-black/30 rounded-[0.6em] bg-rhino-purple hover:scale-105 text-white transition-all text-2xl">
+                    <a href="download" className="inline-flex justify-center items-center py-2 px-4 text-center shadow-lg shadow-black/30 rounded-[0.6em] bg-rhino-purple hover:scale-105 hover:bg-opacity-50 hover:bg-blur-xl text-white transition-all text-2xl">
                         Download
                     </a>  
 

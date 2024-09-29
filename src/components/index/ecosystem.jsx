@@ -21,16 +21,22 @@ function Ecosystem() {
             </p>
             <div className="grid grid-cols-3 gap-8 text-center mt-4 ecosystem-text-down">
               <div>
-                <Image src="/img/ecosystem/icons/setup-wizard.webp" alt="Setup Wizard" width="200" height="200" className="w-[12vw] md:w-[7vw] mx-auto" />
-                <a onClick={wizardshow} className="hover:cursor-pointer hover:text-rhino-purple transition-all text-xl">Setup Wizard →</a>
+                <a onClick={wizardshow} className="hover:cursor-pointer hover:text-rhino-purple transition-all text-xl">
+                  <Image src="/img/ecosystem/icons/setup-wizard.webp" alt="Setup Wizard" width="200" height="200" className="w-[12vw] md:w-[7vw] mx-auto" />
+                  <p className="text-xl">Setup Wizard →</p>
+                </a>
               </div>
               <div>
-                <Image src="/img/ecosystem/icons/your-os.webp" alt="Your System" width="200" height="200" className="w-[12vw] md:w-[7vw] mx-auto" />
-                <a onClick={systemshow} className="hover:cursor-pointer hover:text-rhino-purple transition-all text-xl">Your System →</a>
+                <a onClick={systemshow} className="hover:cursor-pointer hover:text-rhino-purple transition-all text-xl">
+                  <Image src="/img/ecosystem/icons/your-os.webp" alt="Your System" width="200" height="200" className="w-[12vw] md:w-[7vw] mx-auto" />
+                  <p className="text-xl">Your System →</p>
+                </a>
               </div>
               <div>
-                <Image src="/img/ecosystem/icons/rpk-logo.webp" alt="rhino-pkg" width="200" height="200" className="w-[12vw] md:w-[7vw] mx-auto" />
-                <a onClick={rpkshow} className="hover:cursor-pointer hover:text-rhino-purple transition-all text-xl">rhino-pkg →</a>
+                <a onClick={rpkshow} className="hover:cursor-pointer hover:text-rhino-purple transition-all text-xl">
+                  <Image src="/img/ecosystem/icons/rpk-logo.webp" alt="rhino-pkg" width="200" height="200" className="w-[12vw] md:w-[7vw] mx-auto" />
+                  <p className="text-xl">rhino-pkg →</p>
+                </a>
               </div>
             </div>
           </div>
@@ -41,7 +47,7 @@ function Ecosystem() {
       {activeSection === 'wizard' && (
         <Banner
           title="Setup Wizard"
-          imageSrc="/img/ecosystem/applications/setup-wizard.webp"
+          imageSrc="/img/ecosystem/applications/setup-wizard.png"
           description="When you first boot your system, you will be greeted by our elegant setup wizard, giving you the ability to select your theme, install additional package managers, and install additional software to optimize your experience."
           onBackClick={appshide}
         />
@@ -51,7 +57,7 @@ function Ecosystem() {
       {activeSection === 'system' && (
         <Banner
           title="Your System"
-          imageSrc="/img/ecosystem/applications/your-os.webp"
+          imageSrc="/img/ecosystem/applications/your-os.png"
           description="Your System is a handy graphical application that allows you to view system information at a glance. It also provides a graphical method for updating all of your software packages."
           onBackClick={appshide}
         />
@@ -61,7 +67,7 @@ function Ecosystem() {
       {activeSection === 'rpk' && (
         <Banner
           title="rhino-pkg"
-          imageSrc="/img/ecosystem/applications/rhino-pkg.webp"
+          imageSrc="/img/ecosystem/applications/rhino-pkg.png"
           description="Our flagship package management wrapper, rhino-pkg, makes life easy by allowing you to install, remove, and update applications across all package managers and repositories. With easy-to-understand syntax and our handy guide, you’ll have all of your favorite apps in seconds."
           onBackClick={appshide}
         />

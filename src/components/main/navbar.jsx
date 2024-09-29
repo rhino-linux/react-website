@@ -52,7 +52,7 @@ function NavBar() {
                     <Image src="/img/logo.png" alt="" width="50" height="50" className="m-2 mt-4 hover:brightness-50 hover:opacity-80 transition-all" />
                 </Link>
                 <div className="p-2 px-4 text-center m-4 bg-site-300/30 backdrop-blur shadow-black/40 shadow-lg text-xl bg-opacity-35 rounded-[0.65em] md:flex lg:gap-8 md:gap-8 hidden md:block">
-                    <Link href="/" className="hover:scale-110 my-auto hover:brightness-50 hover:opacity-80 transition-all">
+                    <Link href="/" className="my-auto hover:scale-110 hover:brightness-50 hover:opacity-80 transition-all">
                         <Image src="/img/logo.png" alt="" width="50" height="50" />
                     </Link>
                     {baritems.map((item) => (

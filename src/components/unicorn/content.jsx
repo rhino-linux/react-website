@@ -8,7 +8,7 @@ const contentData = [
     title: "Adaptive, to any workflow",
     description:
       " Whether you prefer the traditional floating windows, or are a fanatic of tiling window managers, Unicorn is perfect for you. With optional auto-tiling you can easily toggle between floating and tiling at the press of a button.",
-    imgSrc: "/img/unicorn/tiling.webp",
+    imgSrc: "/img/unicorn/tiling.png",
     buttonText: "Learn the keybinds",
     buttonLink: "https://wiki.rhinolinux.org/user/unicorn",
   },
@@ -16,7 +16,7 @@ const contentData = [
     title: "A beautiful app grid",
     description:
       "Our application grid, Lightpad, is a simple and powerful application launcher that is Wayland compatible. We have made modifications to the theming of Lightpad to integrate perfectly into Unicorn and Rhino Linux.",
-    imgSrc: "/img/unicorn/appgrid.webp",
+    imgSrc: "/img/unicorn/appgrid.png",
     buttonText: null,
     buttonLink: null,
   },
@@ -24,7 +24,7 @@ const contentData = [
     title: "Modern desktop management",
     description:
       "You can switch between virtual desktops with ease. We have loaded in Xfdashboard, with many minor tweaks and improvements. Xfdashboard brings a gnome-shell like virtual desktop and exposé built right into XFCE.",
-    imgSrc: "/img/unicorn/xfdashboard.webp",
+    imgSrc: "/img/unicorn/xfdashboard.png",
     buttonText: null,
     buttonLink: null,
   },
@@ -48,7 +48,7 @@ function Content() {
             {item.buttonText && item.buttonLink && index < 2 && (
               <Link
                 href={item.buttonLink}
-                className="inline-flex justify-center items-center py-2 px-4 mt-2 text-base text-center rounded-[0.65em] bg-rhino-purple hover:scale-105 text-white transition-all text-xl"
+                className="inline-flex justify-center items-center py-2 px-4 mt-2 text-base text-center rounded-[0.65em] bg-rhino-purple hover:scale-105 hover:bg-opacity-50 hover:bg-blur-xl text-white transition-all text-xl"
               >
                 {item.buttonText}
                 <svg
@@ -70,9 +70,11 @@ function Content() {
             <Image
               src={item.imgSrc}
               className="w-full rounded-lg"
-              width="200"
-              height="200"
+              width="1920"
+              height="1080"
               alt={item.title}
+              unoptimized
+              quality={100}
             />
           </div>
         </div>

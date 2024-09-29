@@ -15,7 +15,7 @@ function Quote() {
             {quoteText.map((item, index) => (
                 <blockquote key={index} className="text-xl text-white text-center m-auto px-8 py-4">
                     <p className="italic">&quot;{item.quote}&quot;</p>
-                    <p className="text-white">- {item.author}, <a href={item.link} target="_blank" className="text-rhino-purple">{item.source}</a></p>
+                    <p className="text-white">- {item.author}, <a href={item.link} target="_blank" className="text-rhino-purple hover:brightness-50 transition-all">{item.source}</a></p>
                 </blockquote>
             ))}
         </div>

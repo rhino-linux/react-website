@@ -8,7 +8,7 @@ const contentData = [
     title: "Discover Unicorn",
     description:
       "Rhino Linux comes preinstalled with its own in-house desktop experience, Unicorn, a custom-built XFCE desktop combining the best of traditional and modern takes on the desktop. Unicorn is fast and elegant, perfectly adapted for your needs.",
-    imgSrc: "/img/home/image.png",
+    imgSrc: "/img/home/ulauncher-b.png",
     buttonText: "Learn more",
     buttonLink: "/unicorn/",
   },
@@ -16,7 +16,7 @@ const contentData = [
     title: "Perfect for developers",
     description:
       "Developers will fall in love with our vast software repositories which are always up-to-date. User repositories such as Pacstall can help provide development libraries that are critical for your project. With Codium preinstalled on your system you can begin doing what you do best, instantly. ",
-    imgSrc: "/img/home/developers.webp",
+    imgSrc: "/img/home/developers.png",
     buttonText: "Read our wiki",
     buttonLink: "https://wiki.rhinolinux.org",
   },
@@ -40,7 +40,7 @@ function Content() {
             {item.buttonText && item.buttonLink && index < 2 && (
               <Link
                 href={item.buttonLink}
-                className="inline-flex justify-center items-center py-2 px-4 mt-2 text-base text-center rounded-[0.65em] bg-rhino-purple hover:scale-105 text-white transition-all text-xl"
+                className="inline-flex justify-center items-center py-2 px-4 mt-2 text-base text-center rounded-[0.65em] bg-rhino-purple hover:scale-105 hover:bg-opacity-50 hover:bg-blur-xl text-white transition-all text-xl"
               >
                 {item.buttonText}
                 <svg
@@ -62,9 +62,11 @@ function Content() {
             <Image
               src={item.imgSrc}
               className="w-full rounded-lg"
-              width="200"
-              height="200"
+              width="1920"
+              height="1080"
               alt={item.title}
+              unoptimized
+              quality={100}
             />
           </div>
         </div>
