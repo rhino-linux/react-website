@@ -12,7 +12,7 @@ export default function Announcement() {
             <Link href="/download" className="inline-flex justify-center items-center mr-2 py-2 px-4 text-center rounded-[0.6em] bg-rhino-purple hover:bg-opacity-50 hover:bg-blur-xl hover:scale-105 text-white transition-all text-md">
                 Download
             </Link>
-            <Link href="https://blog.rhinolinux.org/news-15" className="inline-flex leading-10 py-2 mx-2 text-center text-white hover:scale-105 hover:text-rhino-purple transition-all text-md">
+            <Link href="https://blog.rhinolinux.org/news-15" className="inline-flex leading-8 py-2 mx-2 text-center text-white hover:scale-105 hover:text-rhino-purple transition-all text-md">
                 Announcement →
             </Link>
           </p>
