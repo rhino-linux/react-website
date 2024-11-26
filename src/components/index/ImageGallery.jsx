@@ -85,50 +85,58 @@ const ImageGallery = () => {
         >
           <div className="flex justify-center">
             <div className={`relative rounded-xl overflow-hidden shadow-md bg-site-300 transition-opacity duration-300 ${fade ? 'opacity-0' : 'opacity-100'}`}>
-              <Image
-                src={images[currentIndex].src}
-                alt={images[currentIndex].alt}
-                width={800}
-                height={480}
-                className="w-full h-full object-cover rounded-xl"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-              />
-              
-              {showImages && window.innerWidth > 768 && (
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 p-4 transition-opacity duration-300 rounded-b-xl">
-                  <ul className="flex justify-center gap-4">
-                    {images.map((image, index) => (
-                      <li
-                        key={index}
-                        className={`cursor-pointer transition-all ${
-                          currentIndex === index ? 'opacity-100 ring-4 ring-rhino-purple scale-105 rounded-lg' : 'opacity-50'
-                        } hover:opacity-100 hover:scale-105 rounded-lg`}
-                        onMouseEnter={() => {
-                          setHoveredIndex(index);
-                          setIsHovered(true);
-                        }}
-                        onMouseLeave={() => {
-                          setHoveredIndex(null);
-                          setIsHovered(false);
-                        }}
-                        onClick={() => {
-                          setCurrentIndex(index);
-                          setIsHovered(false);
-                        }}
-                      >
-                        <Image
-                          src={image.src}
-                          alt={image.alt}
-                          width={100}
-                          height={60}
-                          className="object-cover rounded-lg"
-                        />
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              <div 
+                className="relative" 
+                onMouseEnter={() => setShowImages(true)}
+                onMouseLeave={() => setShowImages(false)}
+              >
+                <Image
+                  src={images[currentIndex].src}
+                  alt={images[currentIndex].alt}
+                  width={800}
+                  height={480}
+                  className="w-full h-full object-cover rounded-xl"
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                />
+                
+                {showImages && window.innerWidth > 768 && (
+                  <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 p-4 transition-opacity duration-300 rounded-b-xl">
+                    <ul className="flex justify-center gap-4">
+                      {images.map((image, index) => (
+                        <li
+                          key={index}
+                          className={`cursor-pointer transition-all ${
+                            currentIndex === index ? 'opacity-100 ring-1 ring-rhino-purple scale-105 rounded-lg' : 'opacity-50'
+                          } hover:opacity-100 hover:scale-105 rounded-lg`}
+                          onMouseEnter={() => {
+                            setHoveredIndex(index);
+                            setCurrentIndex(index);
+                            setIsHovered(true);
+                          }}
+                          onMouseLeave={() => {
+                            setHoveredIndex(null);
+                            setCurrentIndex(currentIndex);
+                            setIsHovered(false);
+                          }}
+                          onClick={() => {
+                            setCurrentIndex(index);
+                            setIsHovered(false);
+                          }}
+                        >
+                          <Image
+                            src={image.src}
+                            alt={image.alt}
+                            width={100}
+                            height={60}
+                            className="object-cover rounded-lg"
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
