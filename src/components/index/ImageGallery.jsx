@@ -53,20 +53,21 @@ const ImageGallery = () => {
     }, fadeDuration);
   };
 
-  useEffect(() => {
-    let interval;
-    if (!isHovered) {
-      interval = setInterval(() => {
-        nextImage();
-      }, intervalDuration);
-    }
+  // Uncomment the code below to enable auto-scrolling
+  // useEffect(() => {
+  //   let interval;
+  //   if (!isHovered) {
+  //     interval = setInterval(() => {
+  //       nextImage();
+  //     }, intervalDuration);
+  //   }
 
-    return () => {
-      if (interval) {
-        clearInterval(interval);
-      }
-    };
-  }, [isHovered]);
+  //   return () => {
+  //     if (interval) {
+  //       clearInterval(interval);
+  //     }
+  //   };
+  // }, [isHovered]);
 
   return (
     <div
