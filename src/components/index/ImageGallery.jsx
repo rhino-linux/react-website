@@ -2,22 +2,21 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const images = [
-  { src: '/img/home/developers.png', alt: 'Image 1' },
-  { src: '/img/home/ulauncher-a.png', alt: 'Image 2' },
-  { src: '/img/home/ulauncher-b.png', alt: 'Image 3' },
-  { src: '/img/unicorn/tiling.png', alt: 'Image 4' },
-  { src: '/img/unicorn/appgrid.png', alt: 'Image 5' },
+  { src: '/img/home/developers.png', alt: 'Image 1', caption: 'Developers' },
+  { src: '/img/home/ulauncher-a.png', alt: 'Image 2', caption: 'ULauncher A' },
+  { src: '/img/home/ulauncher-b.png', alt: 'Image 3', caption: 'ULauncher B' },
+  { src: '/img/unicorn/tiling.png', alt: 'Image 4', caption: 'Tiling' },
+  { src: '/img/unicorn/appgrid.png', alt: 'Image 5', caption: 'App Grid' },
 ];
 
 const ImageGallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(false);
-  const [showImages, setShowImages] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
 
   const fadeDuration = 500; // milliseconds
-  const intervalDuration = 7500; // milliseconds
+  // const intervalDuration = 7500; // milliseconds
 
   // for swipe
   let touchStartX = 0; 
@@ -81,15 +80,15 @@ const ImageGallery = () => {
       <div className="relative">
         <div 
           className="relative"
-          onMouseEnter={() => setShowImages(true)}
-          onMouseLeave={() => setShowImages(false)}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
           <div className="flex justify-center">
             <div className={`relative rounded-xl overflow-hidden shadow-md bg-site-300 transition-opacity duration-300 ${fade ? 'opacity-0' : 'opacity-100'}`}>
               <div 
                 className="relative" 
-                onMouseEnter={() => setShowImages(true)}
-                onMouseLeave={() => setShowImages(false)}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
               >
                 <Image
                   src={images[currentIndex].src}
@@ -101,56 +100,26 @@ const ImageGallery = () => {
                   onMouseLeave={() => setIsHovered(false)}
                 />
                 
-                {showImages && window.innerWidth > 768 && (
-                  <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 p-4 transition-opacity duration-300 rounded-b-xl">
-                    <ul className="flex justify-center gap-4">
-                      {images.map((image, index) => (
-                        <li
-                          key={index}
-                          className={`cursor-pointer transition-all ${
-                            currentIndex === index ? 'opacity-100 ring-1 ring-rhino-purple scale-105 rounded-lg' : 'opacity-50'
-                          } hover:opacity-100 hover:scale-105 rounded-lg`}
-                          onMouseEnter={() => {
-                            setHoveredIndex(index);
-                            setCurrentIndex(index);
-                            setIsHovered(true);
-                          }}
-                          onMouseLeave={() => {
-                            setHoveredIndex(null);
-                            setCurrentIndex(currentIndex);
-                            setIsHovered(false);
-                          }}
-                          onClick={() => {
-                            setCurrentIndex(index);
-                            setIsHovered(false);
-                          }}
-                        >
-                          <Image
-                            src={image.src}
-                            alt={image.alt}
-                            width={100}
-                            height={60}
-                            className="object-cover rounded-lg"
-                          />
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 p-4 transition-opacity duration-300 rounded-b-xl">
+                  <p className="text-white">{images[currentIndex].caption}</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div className="flex justify-center mt-4 gap-4">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              className={`w-3 h-3 rounded-full transition-colors ${
-                currentIndex === index ? 'bg-rhino-purple' : 'bg-gray-300'
-              }`}
-              onClick={() => setCurrentIndex(index)}
-            />
+          {images.map((image, index) => (
+            <div key={index} className="relative">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={100}
+                height={60}
+                className={`object-cover rounded-lg ${currentIndex === index ? 'ring-4 ring-indigo-700 scale-105' : ''}`}
+                onClick={() => setCurrentIndex(index)}
+              />
+            </div>
           ))}
         </div>
       </div>
