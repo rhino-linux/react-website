@@ -15,6 +15,8 @@ const ImageGallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
 
+  let scaling_factor = 3.5;
+
   const fadeDuration = 500; // milliseconds
   // const intervalDuration = 7500; // milliseconds
 
@@ -93,14 +95,16 @@ const ImageGallery = () => {
                 <Image
                   src={images[currentIndex].src}
                   alt={images[currentIndex].alt}
-                  width={800}
-                  height={480}
+                  quality={100}
+                  width={256*scaling_factor}
+                  height={144*scaling_factor}
                   className="w-full h-full object-cover rounded-xl"
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
+
                 />
                 
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 p-4 transition-opacity duration-300 rounded-b-xl">
+                  <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 p-4 transition-opacity duration-300 rounded-b-xl">
                   <p className="text-white">{images[currentIndex].caption}</p>
                 </div>
               </div>
@@ -114,9 +118,10 @@ const ImageGallery = () => {
               <Image
                 src={image.src}
                 alt={image.alt}
-                width={100}
-                height={60}
-                className={`object-cover rounded-lg ${currentIndex === index ? 'ring-4 ring-indigo-700 scale-105' : ''}`}
+                quality={100}
+                width={155}
+                height={105 }
+                className={`object-cover rounded-lg ${currentIndex === index ? 'ring-4 ring-unicorn-purple scale-105' : ''}`}
                 onClick={() => setCurrentIndex(index)}
               />
             </div>
