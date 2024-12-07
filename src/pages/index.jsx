@@ -8,7 +8,7 @@ import Quote from "../components/index/quote";
 import Announcement from "../components/index/announcement";
 import Footer from "../components/main/footer";
 import SiteData from "../components/main/sitedata";
-
+import ImageGallery from "../components/index/ImageGallery";
 export default function Home() {
   return (
     <main>
@@ -16,6 +16,7 @@ export default function Home() {
       <Hero />
       {/* <Announcement /> */}
       <Description />
+      <ImageGallery />
       <Ecosystem />
       <Quote />
       <Content />
